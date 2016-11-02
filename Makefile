@@ -46,7 +46,7 @@ endif
 # PROJECT CONFIG, do not put spaced behind the variables
 # ======================================================================
 # Python module name
-PYTHON_MODN = ExampleDerivedTypes
+PYTHON_MODN = HSX_Mod
 # mapping between Fortran and C types
 KIND_MAP = kind_map
 
@@ -135,6 +135,6 @@ _${PYTHON_MODN}_pkg.so: libsrc.a ${LIBSRC_FPP_FILES}
 	f2py-f90wrap --fcompiler=$(FCOMP) --build-dir . -c -m _${PYTHON_MODN}_pkg -L. -lsrc f90wrap*.f90 #-h vmi.pyf
 
 
-test: all
-	${PYTHON} tests.py
+#test: all
+#	${PYTHON} tests.py
 
