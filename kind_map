@@ -1,0 +1,19 @@
+{
+ 'real':     {   '' : 'float',
+                '4' : 'float',
+              'sp' : 'float',
+                '8' : 'double',
+              'dp' : 'double'},
+ 'complex' : {   '' : 'complex_float',
+ 	            '8' : 'complex_double',
+ 	           '16' : 'complex_long_double',
+ 	           'dp' : 'complex_double'},
+ 'integer' : {  '' : 'int',
+		  '4' : 'int',
+		  'sp' : 'int',
+	            '8' : 'long_long',
+	           'dp' : 'long_long' },
+ 'character' : {'*'  : 'char',
+                '1' : 'char' ,
+                '20' : 'char' }
+}
